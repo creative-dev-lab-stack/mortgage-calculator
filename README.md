@@ -30,7 +30,7 @@ A comprehensive and user-friendly mortgage calculator built with React Native an
 
 | Calculator | AI Assistant | Results |
 |-------------|---------------|---------|
-| ![Calculator](screenshots/Calculator.png) | ![AI Assistant](screenshots/aiAssistant.png) | ![Results](screenshots/results.png) |
+| ![Calculator](screenshots/Calculator.png) | ![AI Assistant](screenshots/aiAssistant.png) | ![Results](screenshots/Results.png) |
 
 ## 🚀 Getting Started
 
