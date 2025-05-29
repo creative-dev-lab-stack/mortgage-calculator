@@ -86,34 +86,28 @@ npx expo start --android
 
 ```
 mortgage-calculator/
-├── assets/                 # Images, fonts, and other static assets
+├── assets/                 # Images, fonts, and other static assets (Future)
 │   ├── images/
 │   ├── icons/
 │   └── fonts/
+├── screenshots/
+│   ├── aiAssistant.png
+│   ├── Calculator.png
+│   ├── Results.png
 ├── src/
 │   ├── components/         # Reusable UI components
-│   │   ├── Calculator/
-│   │   ├── Charts/
-│   │   ├── Forms/
-│   │   └── UI/
-│   ├── screens/           # App screens/pages
-│   │   ├── HomeScreen.js
-│   │   ├── CalculatorScreen.js
-│   │   ├── ResultsScreen.js
-│   │   └── SettingsScreen.js
-│   ├── navigation/        # Navigation configuration
-│   │   └── AppNavigator.js
+│   │   ├── CalculatorTab.js
+│   │   ├── ChatTab.js
+│   │   ├── Header.js
+│   │   ├── ResultsTab.js
+│   │   ├── TabBar.js
 │   ├── utils/            # Utility functions and helpers
 │   │   ├── calculations.js
-│   │   ├── formatting.js
-│   │   └── storage.js
-│   ├── constants/        # App constants and configurations
-│   │   ├── Colors.js
-│   │   ├── Styles.js
-│   │   └── Config.js
-│   └── hooks/            # Custom React hooks
-│       ├── useCalculations.js
-│       └── useStorage.js
+│   │   ├── validation.js
+│   │   └── aiChatUtils.js
+│   └── styles/            # Defined styles for the app
+│       ├── componentStyles.js
+│       └── globalStyles.js
 ├── App.js                # Main app component
 ├── app.json             # Expo configuration
 ├── package.json         # Dependencies and scripts
@@ -206,7 +200,7 @@ Where:
 
 ## 🎨 Customization
 
-### Themes and Styling
+### Themes and Styling (TODO)
 
 The app supports customizable themes. Modify colors in `src/constants/Colors.js`:
 
@@ -224,7 +218,7 @@ export const Colors = {
 
 1. **Create new components** in `src/components/`
 2. **Add screens** in `src/screens/`
-3. **Update navigation** in `src/navigation/AppNavigator.js`
+3. **Add AI logic** in `src/utils/aiChatUtils.js`
 4. **Add calculations** in `src/utils/calculations.js`
 
 ## 📦 Dependencies
@@ -389,8 +383,8 @@ SOFTWARE.
 
 For support, please:
 - Open an issue on GitHub
-- Email us at support@creativedevlab.com
-- Check our [documentation](https://github.com/creative-dev-lab-stack/mortgage-calculator/wiki)
+- Email us at support@creativedevlab.com (Random)
+- Check our [documentation](https://github.com/creative-dev-lab-stack/mortgage-calculator/wiki) (TODO)
 
 ## 🔮 Future Enhancements
 
