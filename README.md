@@ -4,19 +4,27 @@ A comprehensive and user-friendly mortgage calculator built with React Native an
 
 ## ✨ Features
 
-- **Monthly Payment Calculation**: Calculate accurate monthly mortgage payments
-- **Interest Rate Support**: Handle both fixed and variable interest rates
-- **Amortization Schedule**: View detailed payment breakdowns over the loan term
-- **Multiple Loan Types**: Support for conventional, FHA, VA, and other loan types
-- **Down Payment Calculator**: Determine optimal down payment amounts
-- **PMI Calculator**: Calculate Private Mortgage Insurance when applicable
-- **Property Tax Integration**: Include property taxes in monthly calculations
-- **Insurance Estimates**: Factor in homeowner's insurance costs
-- **Interactive Charts**: Visual representation of payment breakdowns
-- **Save Calculations**: Store and compare multiple mortgage scenarios
-- **Export Results**: Share calculations via email or text
-- **Responsive Design**: Optimized for both phones and tablets
-- **Offline Capability**: Works without internet connection
+### Core Calculator
+- **Mortgage Payoff Calculator**: Calculate how additional principal payments accelerate loan payoff
+- **Interest Savings Analysis**: See exactly how much interest you'll save with extra payments
+- **Timeline Comparison**: Visual comparison between original and accelerated payment schedules
+- **Interactive Loan Timeline Chart**: Real-time visualization using Recharts showing balance reduction over time
+- **Flexible Payment Scenarios**: Test different additional payment amounts
+- **Custom Start Date**: Set your actual loan start date for accurate projections
+
+### AI-Powered Assistant
+- **Natural Language Processing**: Ask questions in plain English about mortgage scenarios
+- **Smart Scenario Analysis**: Get instant answers to questions like "How much will I save with $300 extra per month?"
+- **Payoff Timeline Predictions**: Ask "Can I finish my mortgage in 20 years?" and get detailed calculations
+- **Interactive Chat Interface**: Real-time conversation with AI mortgage advisor
+- **Context-Aware Responses**: AI understands your specific loan details for personalized advice
+
+### User Experience
+- **Modern Responsive Design**: Beautiful gradient interface optimized for all devices
+- **Real-time Validation**: Instant form validation with helpful error messages
+- **Professional Data Visualization**: Clean charts and metrics with Recharts integration
+- **Intuitive Input Forms**: Easy-to-use form controls with clear labeling
+- **Results Dashboard**: Comprehensive display of savings, timeline, and payoff details
 
 ## 📱 Screenshots
 
@@ -148,6 +156,31 @@ Modify `app.json` to customize app settings:
   }
 }
 ```
+## 🤖 AI Assistant Features
+
+The built-in AI mortgage assistant can help you explore different scenarios through natural conversation:
+
+### Supported Question Types
+
+**Payment Scenarios:**
+- "How much will I save with $300 extra per month?"
+- "What if I add $500 to my monthly payment?"
+- "Can I save money by paying an additional $200?"
+
+**Payoff Timeline:**
+- "Can I finish my mortgage in 20 years?"
+- "How much extra do I need to pay to payoff in 15 years?"
+- "When will I be done if I pay $400 more monthly?"
+
+**Interest Savings:**
+- "How much interest will I save with extra payments?"
+- "What's my total interest savings?"
+- "How much less interest will I pay?"
+
+**General Calculations:**
+- "What's the best additional payment amount?"
+- "How do extra payments help?"
+- "Show me different payment scenarios"
 
 ## 🧮 Mortgage Calculation Logic
 
@@ -197,21 +230,16 @@ export const Colors = {
 ## 📦 Dependencies
 
 ### Core Dependencies
-- **expo**: ~49.0.0
-- **react**: 18.2.0
-- **react-native**: 0.72.0
-- **@react-navigation/native**: For navigation
-- **@react-navigation/stack**: Stack navigation
+- **expo**: ~53.0.9
+- **react**: 19.0.0
+- **react-native**: 0.79.2
+- **@expo/vector-icons**: ^14.1.0
+- **react-native-chart-kit**: ^6.12.0
+- **react-native-svg**: 15.11.2
 
 ### UI Libraries
-- **react-native-elements**: UI components
 - **react-native-vector-icons**: Icons
 - **react-native-chart-kit**: Charts and graphs
-
-### Utilities
-- **async-storage**: Local data storage
-- **react-native-share**: Share functionality
-- **expo-print**: PDF generation
 
 ## 🧪 Testing
 
@@ -366,16 +394,29 @@ For support, please:
 
 ## 🔮 Future Enhancements
 
-- [ ] Multiple currency support
-- [ ] Loan comparison tool
-- [ ] Refinancing calculator
-- [ ] Investment property calculations
-- [ ] Integration with real estate APIs
-- [ ] Mortgage rate tracking
-- [ ] Push notifications for rate changes
-- [ ] Cloud sync for saved calculations
-- [ ] Advanced reporting features
-- [ ] Multi-language support
+### Short-term Roadmap
+- [ ] **Enhanced AI Conversations**: More sophisticated natural language understanding
+- [ ] **Payment Strategy Recommendations**: AI-suggested optimal payment strategies
+- [ ] **Loan Comparison Tool**: Compare multiple mortgage scenarios side-by-side
+- [ ] **Export Functionality**: PDF reports and email sharing of calculations
+- [ ] **Save/Load Scenarios**: Persistent storage of different mortgage calculations
+
+### Medium-term Features
+- [ ] **Amortization Schedule View**: Detailed month-by-month payment breakdown
+- [ ] **Refinancing Calculator**: Compare current mortgage vs refinancing options
+- [ ] **Property Tax Integration**: Include property taxes and insurance in calculations
+- [ ] **Investment Analysis**: Compare extra payments vs alternative investments
+- [ ] **Mobile App Version**: Native iOS and Android applications
+
+### Long-term Vision
+- [ ] **Real Estate Market Integration**: Current mortgage rates and property values
+- [ ] **Biweekly Payment Calculator**: Alternative payment frequency analysis
+- [ ] **Multiple Currency Support**: International mortgage calculations
+- [ ] **Advanced Charting**: Interactive 3D visualizations and detailed analytics
+- [ ] **Social Features**: Share scenarios and get community feedback
+- [ ] **API Integration**: Connect with banking and financial institutions
+- [ ] **Machine Learning**: Personalized recommendations based on user behavior
+- [ ] **Voice Interface**: Voice-activated mortgage calculations and AI conversations
 
 ---
 
